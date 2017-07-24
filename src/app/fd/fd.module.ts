@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SummaryComponent } from './summary/summary.component';
 import { DetailsComponent } from './details/details.component';
 import { NewComponent } from './new/new.component';
-import { FdRoutingModule } from './fd-routing.module'
+import { FdRoutingModule } from './fd-routing.module';
 
 @NgModule({
   imports: [

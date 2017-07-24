@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MasterComponent } from './master/master.component'
-import { FdModule } from './../fd/fd.module'
+import { MasterComponent } from './master/master.component';
+import { FdModule } from './../fd/fd.module';
 
 export const routes: Routes = [
     { path: 'host', component: MasterComponent ,
