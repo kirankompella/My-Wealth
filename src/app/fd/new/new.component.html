@@ -1,3 +1,73 @@
-<p>
-  new works!
-</p>
+<div align=center>
+            <h3>Add New Investment</h3>
+</div>
+<div class="container-div">
+        <div class="row">
+                 <md-input-container >
+                    <input required mdInput placeholder="Identification Number"/>
+                </md-input-container>
+        </div>
+        <div>
+            <div class="dual-column">
+                <md-input-container >
+                    <input required mdInput placeholder="Investment Amount"/>
+                 </md-input-container >
+            </div>
+            <div class="dual-column"> 
+                 <md-input-container>
+                     <input mdInput placeholder="Maturity Amount"/>
+                 </md-input-container>
+            </div>
+        </div>
+        <div>
+            <div class="dual-column"> 
+                <md-input-container>
+                        <input required mdInput [mdDatepicker]="openingDate" placeholder="Opening Date(dd/mm/yyyy)">
+                        <button mdSuffix [mdDatepickerToggle]="openingDate"></button>
+                </md-input-container>
+                <md-datepicker #openingDate></md-datepicker>
+            </div>
+            <div class="dual-column">
+                <md-input-container>
+                    <input required mdInput [mdDatepicker]="maturityDate" placeholder="Maturity Date(dd/mm/yyyy)">
+                    <button mdSuffix [mdDatepickerToggle]="maturityDate"></button>
+                </md-input-container>
+                <md-datepicker #maturityDate></md-datepicker>
+            </div>
+        </div>
+        
+         <div>
+            <div class="dual-column">
+                <md-input-container >
+                    <input requiered mdInput placeholder="Investment By"/>
+                 </md-input-container >
+            </div>
+            <div class="dual-column"> 
+                 <md-input-container>
+                     <input mdInput placeholder="Nominated To"/>
+                 </md-input-container>
+            </div>
+        </div>
+        <div>
+            <div class="dual-column"> 
+                <md-input-container>
+                    <input mdInput  placeholder="Rate Of Intrest"/>
+                </md-input-container>
+            </div>
+             <div class="dual-column">
+                <md-slider min="1" max="12" step="0.1" value="1.5"></md-slider>
+            </div>
+        </div>
+        <div class="row">   
+            <div align="center" class="block">
+                <a md-raised-button color='primary' routerLink=".">Add</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a md-raised-button color='secondary' routerLink=".">Clear</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                ;&nbsp;&nbsp;
+            </div>
+        </div> 
+        
+</div>
+
+      
