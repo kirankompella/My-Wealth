@@ -4,7 +4,7 @@ import { MasterComponent } from './master/master.component';
 import { HostRoutingModule } from './host-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FdModule } from '../fd/fd.module';
-import {CdkTableModule} from '@angular/cdk'
+import {CdkTableModule} from '@angular/cdk';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';

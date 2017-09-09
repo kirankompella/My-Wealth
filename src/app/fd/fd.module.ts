@@ -5,6 +5,7 @@ import { DetailsComponent } from './details/details.component';
 import { NewComponent } from './new/new.component';
 import { FdRoutingModule } from './fd-routing.module';
 import {CdkTableModule} from '@angular/cdk';
+import { FormsModule } from '@angular/forms';
 
 import {
   MdAutocompleteModule,
@@ -43,6 +44,7 @@ import {
 
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule
     ,FdRoutingModule
     ,MdDatepickerModule

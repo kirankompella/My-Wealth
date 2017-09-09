@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Fd } from '../fd';
 
 @Component({
   selector: 'app-new',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewComponent implements OnInit {
 
+  fd : Fd = new Fd();
+
   constructor() { }
 
   ngOnInit() {
+    this.fd.InvestmentType = 'Fixed Deposit';
   }
 
 }
