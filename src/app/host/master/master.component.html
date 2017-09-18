@@ -1,11 +1,32 @@
-<p>
-  master works!
-</p>
+<div style="height:100%">
+
+  <md-toolbar color='primary'>
+      <span>Investments</span>
+  </md-toolbar>
+
+  <md-sidenav-container class="docs-component-viewer-sidenav-container mat-sidenav-container mat-sidenav-transition">
+  <md-sidenav #sidenav mode="side" class="docs-component-viewer-sidenav mat-sidenav mat-sidenav-opened mat-sidenav-side" opened="true">
+     <button md-mini-fab class="" (click)="sidenav.toggle()">
+      <md-icon>add</md-icon>
+    </button>
+    
+  <md-list>
+    <md-list-item >
+     <h4 md-line>Fixed Deposits</h4>
+      </md-list-item>
+        <md-divider></md-divider>
+      <md-list-item >
+        <h4 md-line>test</h4>
+      </md-list-item>
+        <md-divider></md-divider>
+    </md-list>
+  </md-sidenav>
+  <div><router-outlet></router-outlet></div>
+</md-sidenav-container>
 
 <div>
-    Individual pages
 
-<div><router-outlet></router-outlet></div>
 
-Individual pages end
+
+</div>
 </div>

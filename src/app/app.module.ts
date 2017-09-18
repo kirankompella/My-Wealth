@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { HostModule } from './host/host.module'
+import { HostModule } from './host/host.module';
 
 /* Routing Module */
 import { AppRoutingModule } from './app-routing.module';
